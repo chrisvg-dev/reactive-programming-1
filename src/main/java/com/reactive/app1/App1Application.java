@@ -1,7 +1,9 @@
 package com.reactive.app1;
 
+import com.reactive.app1.filtrado.Filtrado;
 import com.reactive.app1.models.Persona;
 import com.reactive.app1.operador.creacion.Creacion;
+import com.reactive.app1.transformacion.Transformacion;
 import io.reactivex.Observable;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -66,7 +68,12 @@ public class App1Application implements CommandLineRunner {
 		//flux();
 		//fluxMono();
 
-		Creacion app = new Creacion();
-		app.repeatMono();
+		//Creacion app = new Creacion();
+		//app.repeatMono();
+
+		//Transformacion app = new Transformacion();
+		//app.groupBy();
+
+		new Filtrado().take();
 	}
 }

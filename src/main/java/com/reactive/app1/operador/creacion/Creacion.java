@@ -38,7 +38,7 @@ public class Creacion {
     public void repeatFlux () {
         List<Persona> personaList = new ArrayList<>();
         personaList.add( new Persona(1, "CRISTHIAN", 29) );
-        personaList.add( new Persona(2, "VILLEGAS", 29) );
+        personaList.add( new Persona(1, "VILLEGAS", 29) );
         personaList.add( new Persona(3, "GARCIA", 29) );
 
         Flux.fromIterable( personaList )
