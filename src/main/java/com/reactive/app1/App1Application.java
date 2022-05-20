@@ -1,6 +1,10 @@
 package com.reactive.app1;
 
+import com.reactive.app1.combinacion.Combinacion;
+import com.reactive.app1.condicion.Condicional;
+import com.reactive.app1.error.ErrorOp;
 import com.reactive.app1.filtrado.Filtrado;
+import com.reactive.app1.matematicos.Matematico;
 import com.reactive.app1.models.Persona;
 import com.reactive.app1.operador.creacion.Creacion;
 import com.reactive.app1.transformacion.Transformacion;
@@ -74,6 +78,14 @@ public class App1Application implements CommandLineRunner {
 		//Transformacion app = new Transformacion();
 		//app.groupBy();
 
-		new Filtrado().take();
+		//new Filtrado().take();
+
+		//new Combinacion().zipWith();
+
+		//new ErrorOp().errorMap();
+		//new Condicional().defaultIsEmpty();
+		//new Condicional().timeOut();
+
+		new Matematico().sum();
 	}
 }
